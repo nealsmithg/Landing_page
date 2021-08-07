@@ -1,33 +1,40 @@
 header {
     background-color: rgb(101, 101, 255);
-    text-align: right;
-    height: 30px;
+    height: 50px;
     border-bottom:5px solid rgb(131, 131, 255);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
 }
 
-.header {
+.header{
     background-color: #fcb932;
     margin: 5px;
     color: white;
     text-decoration: none;
     border: black solid;
     padding: 6px 0 4px 0;
-    line-height: 2
-}
-body{
-    text-align: center;
+    line-height: 1.5;
+    font-size: 35px;
 }
 
-.text{
-    text-align: center;
-    padding: green 10px;
-    border: black solid 5px;
-    margin: crimson 10px;
-    background-color: rgb(100, 100, 199) ;
+main{
+    display: flex;
+    flex-direction: column;
 }
+
+img{
+    object-fit: contain;
+}
+
+header div{
+    font-size: 55px;
+    font-family: "Brush Script MT";
+    display: inline;
+}
+
 
 footer{
-
     background-color: rgb(101, 101, 255);
     border: solid black;
     text-align: center;
