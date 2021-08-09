@@ -1,4 +1,4 @@
-header {
+header{
     background-color: rgb(101, 101, 255);
     height: 50px;
     border-bottom:5px solid rgb(131, 131, 255);
@@ -23,13 +23,27 @@ header div{
     font-size: 35px;
 }
 
-main{
-    display: flex;
-    flex-direction: column;
-}
-
 img{
     object-fit: contain;
+}
+
+main{
+    display: flex;
+}
+
+main h1{
+    flex:1 0 20%;
+    border-right: 2px solid black;
+    text-align: right;
+    padding: 10px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.aboutme{
+    flex:1 0 80%;
+    padding: 10px;
+    text-indent: 50px;
 }
 
 footer{
