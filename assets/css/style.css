@@ -7,14 +7,19 @@ header {
     padding: 10px;
 }
 
-.header{
+header div{
+    font-size: 55px;
+    font-family: "Brush Script MT";
+    display: inline;
+    flex:6 0 auto;
+}
+
+.nav{
     background-color: #fcb932;
     margin: 5px;
     color: white;
     text-decoration: none;
     border: black solid;
-    padding: 6px 0 4px 0;
-    line-height: 1.5;
     font-size: 35px;
 }
 
@@ -26,13 +31,6 @@ main{
 img{
     object-fit: contain;
 }
-
-header div{
-    font-size: 55px;
-    font-family: "Brush Script MT";
-    display: inline;
-}
-
 
 footer{
     background-color: rgb(101, 101, 255);
