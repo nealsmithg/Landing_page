@@ -1,5 +1,8 @@
+:root{
+    --blue: rgb(101, 101, 255);
+}
 header{
-    background-color: rgb(101, 101, 255);
+    background-color: var(--blue);
     height: 50px;
     border-bottom:5px solid rgb(131, 131, 255);
     display: flex;
@@ -23,12 +26,13 @@ header div{
     font-size: 35px;
 }
 
-img{
+.tech-pic{
     object-fit: contain;
 }
 
 main{
     display: flex;
+    flex-flow: row wrap;
 }
 
 main h1{
@@ -38,12 +42,22 @@ main h1{
     padding: 10px;
     font-size: 35px;
     font-weight: bold;
+    margin: 3px 0;
 }
 
-.aboutme{
-    flex:1 0 80%;
+.aboutme,
+.work{
+    flex:1 0 75%;
     padding: 10px;
     text-indent: 50px;
+}
+
+.code{
+    border: 2px solid var(--blue);
+}
+
+.code{
+    display: flex;
 }
 
 footer{
