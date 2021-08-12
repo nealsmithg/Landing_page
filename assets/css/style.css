@@ -28,6 +28,8 @@ header div{
 
 .tech-pic{
     object-fit: contain;
+    height: 100%; 
+    width: 100%; 
 }
 
 main{
@@ -45,24 +47,56 @@ main h1{
     margin: 3px 0;
 }
 
-.aboutme,
-.work{
+#aboutme{
     flex:1 0 75%;
     padding: 10px;
     text-indent: 50px;
 }
 
-.code{
-    border: 2px solid var(--blue);
-}
-
-.code{
+#work{
+    flex:1 0 75%;
+    padding: 10px;
     display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
 }
 
-footer{
-    background-color: rgb(101, 101, 255);
-    border: solid black;
-    text-align: center;
-    display: block;
+.code{
+    margin: 20px 0;
+    flex:0 0 auto;
+    height: 200px;
+    width: 700px;
+    background-image: url(../images/code-pic.jpg);
+    background-size: cover;
+}
+
+.resume{
+    flex:0 0 auto;
+    height: 200px;
+    width: 500px;
+    background-image: url(../images/resume-pic.png);
+    background-size: cover;
+ }
+
+.resume-pic{
+    height: 100%;
+    width: 100%;
+}
+
+#contact{
+    flex:1 0 75%;
+    padding: 10px;
+    text-indent: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.foot{
+    color: black;
+    margin: 5px;
+    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color:  var(--blue);
+    font-size: 35px;
 }
