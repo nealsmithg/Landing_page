@@ -2,6 +2,7 @@
     --blue: rgb(101, 101, 255);
     --lightblue: rgb(131, 131, 255)
 }
+
 header{
     background-color: var(--blue);
     height: 50px;
@@ -92,11 +93,13 @@ main h1{
 .code{
     height: 200px;
     width: 670px;
+    object-fit: cover;
 }
 
 .resume{
     height: 150px;
     width: 400px;
+    object-fit: cover;
 }
 
 #contact{
@@ -115,4 +118,49 @@ main h1{
     text-decoration: underline;
     text-decoration-color:  var(--blue);
     font-size: 35px;
+}
+
+@media screen and (max-width: 768px) {
+    header{
+        flex-direction: colemn;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    header div{
+        width: 100%;
+    }
+
+    .nav{
+        width:100%
+    }
+
+    main{
+        flex-direction: column;
+    }
+
+    main h1{
+        border-right: none;
+        border-bottom: 2px solid black;
+        text-align: left;
+    }
+
+    .code{
+        width: 100vw;
+        height: 200px;
+    }
+
+    .resume{
+        width: 100vw;
+        height: 200px;
+    }
+
+    #aboutme{
+        flex: 1 1 100%;
+        width: auto;
+    }
+
+    #contact{
+        flex-direction: column;
+    }
 }
