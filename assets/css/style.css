@@ -1,167 +1,178 @@
-:root{
-    --blue: rgb(101, 101, 255);
-    --lightblue: rgb(131, 131, 255)
+:root {
+  --blue: rgb(101, 101, 255);
+  --lightblue: rgb(131, 131, 255);
 }
 
-header{
-    background-color: var(--blue);
-    height: 50px;
-    border-bottom:5px solid var(--lightblue);
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
+header {
+  background-color: var(--blue);
+  height: 50px;
+  border-bottom: 5px solid var(--lightblue);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
 }
 
-header div{
-    font-size: 55px;
-    font-family: "Brush Script MT";
-    display: inline;
-    flex:6 0 auto;
+header div {
+  font-size: 55px;
+  font-family: "Brush Script MT";
+  display: inline;
+  flex: 6 0 auto;
 }
 
-.nav{
-    background-color: #fcb932;
-    margin: 5px;
-    color: white;
-    text-decoration: none;
-    border: black solid;
-    font-size: 35px;
+.nav {
+  background-color: #fcb932;
+  margin: 5px;
+  color: white;
+  text-decoration: none;
+  border: black solid;
+  font-size: 35px;
 }
 
-.banner{
-    position: relative;
+.banner {
+  position: relative;
 }
 
-.tech-pic{
-    object-fit: contain;
-    height: 100%; 
-    width: 100%; 
+.tech-pic {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
 }
 
-.profile-pic{
-    position: absolute;
-    border-radius: 100%;
-    object-fit: cover;
-    height: 50%;
-    right: 5%;
-    bottom: 25%;
+.profile-pic {
+  position: absolute;
+  border-radius: 100%;
+  object-fit: cover;
+  height: 50%;
+  right: 5%;
+  bottom: 25%;
 }
-main{
-    background-color: rgb(209, 209, 252);
-    display: flex;
-    flex-flow: row wrap;
-}
-
-main h1{
-    flex:1 0 20%;
-    border-right: 2px solid black;
-    text-align: right;
-    padding: 10px;
-    font-size: 35px;
-    font-weight: bold;
-    margin: 3px 0;
+main {
+  background-color: rgb(209, 209, 252);
+  display: flex;
+  flex-flow: row wrap;
 }
 
-#aboutme{
-    flex:1 0 75%;
-    padding: 10px;
-    text-indent: 50px;
+main h1 {
+  flex: 1 0 20%;
+  border-right: 2px solid black;
+  text-align: right;
+  padding: 10px;
+  font-size: 35px;
+  font-weight: bold;
+  margin: 3px 0;
 }
 
-#work{
-    flex:1 0 75%;
-    padding: 10px;
-    height: auto;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#aboutme {
+  flex: 1 0 75%;
+  padding: 10px;
+  text-indent: 50px;
+}
+
+.group_project {
+  flex: 1 0 75%;
+  padding: 10px;
+  text-indent: 50px;
+}
+
+#work {
+  flex: 1 0 75%;
+  padding: 10px;
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
 }
 
 .card {
-    position: relative;
-    text-align: center;
-    border: 5px solid var(--blue);
-    margin: 5px;
+  position: relative;
+  text-align: center;
+  border: 5px solid var(--blue);
+  margin: 5px;
 }
 
-.card-title{
-    position: absolute;
-    background-color: var(--blue);
-    bottom: 30px;
-}
-  
-.code{
-    height: 200px;
-    width: 670px;
-    object-fit: cover;
+.card-title {
+  position: absolute;
+  background-color: var(--blue);
+  bottom: 30px;
 }
 
-.resume{
-    height: 150px;
-    width: 400px;
-    object-fit: cover;
+.code {
+  height: 200px;
+  width: 670px;
+  object-fit: cover;
 }
 
-#contact{
-    flex:1 0 75%;
-    padding: 10px;
-    text-indent: 50px;
-    display: flex;
-    justify-content: space-evenly;
-    padding: 10px;
+.resume {
+  height: 150px;
+  width: 400px;
+  object-fit: cover;
 }
 
-.foot{
-    color: black;
-    margin: 5px;
-    text-decoration: none;
-    text-decoration: underline;
-    text-decoration-color:  var(--blue);
-    font-size: 35px;
+#contact {
+  flex: 1 0 75%;
+  padding: 10px;
+  text-indent: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+.foot {
+  color: black;
+  margin: 5px;
+  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: var(--blue);
+  font-size: 35px;
 }
 
 @media screen and (max-width: 768px) {
-    header{
-        flex-direction: colemn;
-        flex-wrap: wrap;
-        height: auto;
-    }
+  header {
+    flex-direction: colemn;
+    flex-wrap: wrap;
+    height: auto;
+  }
 
-    header div{
-        width: 100vw;
-    }
+  header div {
+    width: 100vw;
+  }
 
-    .nav{
-        width:100vw;
-    }
+  .nav {
+    width: 100vw;
+  }
 
-    main{
-        flex-direction: column;
-    }
+  main {
+    flex-direction: column;
+  }
 
-    main h1{
-        border-right: none;
-        border-bottom: 2px solid black;
-        text-align: left;
-        width: 100vw;
-    }
+  main h1 {
+    border-right: none;
+    border-bottom: 2px solid black;
+    text-align: left;
+    width: 100vw;
+  }
 
-    .code{
-        width: 100vw;
-        height: 200px;
-    }
+  .code {
+    width: 100vw;
+    height: 200px;
+  }
 
-    .resume{
-        width: 100vw;
-        height: 200px;
-    }
+  .resume {
+    width: 100vw;
+    height: 200px;
+  }
 
-    #aboutme{
-        flex: 1 1 100%;
-        width: 100vw;
-    }
+  #aboutme {
+    flex: 1 1 100%;
+    width: 100vw;
+  }
 
-    #contact{
-        flex-direction: column;
-    }
+  #contact {
+    flex-direction: column;
+  }
 }
