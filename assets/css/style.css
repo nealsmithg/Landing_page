@@ -132,6 +132,10 @@ h2 {
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    width: 100vw;
+  }
+
   header {
     flex-direction: colemn;
     flex-wrap: wrap;
@@ -154,22 +158,18 @@ h2 {
     border-right: none;
     border-bottom: 2px solid black;
     text-align: left;
-    width: 100vw;
   }
 
   .code {
-    width: 100vw;
     height: 200px;
   }
 
   .resume {
-    width: 100vw;
     height: 200px;
   }
 
   #aboutme {
     flex: 1 1 100%;
-    width: 100vw;
   }
 
   #contact {
