@@ -133,7 +133,7 @@ h2 {
 
 @media screen and (max-width: 768px) {
   body {
-    width: 100vw;
+    width: 100%;
   }
 
   header {
@@ -143,11 +143,11 @@ h2 {
   }
 
   header div {
-    width: 100vw;
+    width: 100%;
   }
 
   .nav {
-    width: 100vw;
+    width: 100%;
   }
 
   main {
@@ -158,21 +158,25 @@ h2 {
     border-right: none;
     border-bottom: 2px solid black;
     text-align: left;
+    width: calc(100% - 20px);
   }
 
-  .code {
-    height: 200px;
+  #work {
+    width: calc(100% - 20px);
   }
 
-  .resume {
-    height: 200px;
+  .card-picture {
+    width: calc(100vw - 20px);
   }
 
   #aboutme {
     flex: 1 1 100%;
+    width: calc(100% - 20px);
   }
 
   #contact {
     flex-direction: column;
+    width: calc(100% - 20px);
+    text-indent: 0px;
   }
 }
