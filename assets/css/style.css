@@ -101,13 +101,13 @@ h2 {
   bottom: 30px;
 }
 
-.code {
+/* .code {
   height: 200px;
-  width: 670px;
+  width: 670px;s
   object-fit: cover;
-}
+} */
 
-.resume {
+.card-picture {
   height: 150px;
   width: 400px;
   object-fit: cover;
