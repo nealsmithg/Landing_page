@@ -118,6 +118,7 @@ h2 {
   padding: 10px;
   text-indent: 50px;
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-evenly;
   padding: 10px;
 }
@@ -129,6 +130,7 @@ h2 {
   text-decoration: underline;
   text-decoration-color: var(--blue);
   font-size: 35px;
+  flex: 1 0 45%;
 }
 
 @media screen and (max-width: 768px) {
