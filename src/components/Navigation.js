@@ -18,13 +18,6 @@ export default function Navigation({ currentPage, handlePageChange }) {
         Work
       </a>
       <a
-        href="#contactForm"
-        onClick={() => handlePageChange("Contact")}
-        className={currentPage === "Contact" ? "nav active" : "nav"}
-      >
-        Contact
-      </a>
-      <a
         href="#resume"
         onClick={() => handlePageChange("Resume")}
         className={currentPage === "Resume" ? "nav active" : "nav"}
